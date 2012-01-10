@@ -6,7 +6,7 @@ class FTPException extends Exception {
 /**
  * 
  * FTP class
- * @author ianbarker
+ * @author _ianbarker
  * 
  */
 
@@ -223,18 +223,18 @@ class ftp {
 		}
 	}
 
-	private /**
-			 * Return human readable sizes
-			 *
-			 * @author      Aidan Lister <aidan@php.net>
-			 * @version     1.3.0
-			 * @link        http://aidanlister.com/2004/04/human-readable-file-sizes/
-			 * @param       int     $size        size in bytes
-			 * @param       string  $max         maximum unit
-			 * @param       string  $system      'si' for SI, 'bi' for binary prefixes
-			 * @param       string  $retstring   return string format
-			 */
-	function size_readable($size, $max = null, $system = 'si', $retstring = '%01.2f%s') {
+	/**
+	 * Return human readable sizes
+	 *
+	 * @author      Aidan Lister <aidan@php.net>
+	 * @version     1.3.0
+	 * @link        http://aidanlister.com/2004/04/human-readable-file-sizes/
+	 * @param       int     $size        size in bytes
+	 * @param       string  $max         maximum unit
+	 * @param       string  $system      'si' for SI, 'bi' for binary prefixes
+	 * @param       string  $retstring   return string format
+	 */
+	private function size_readable($size, $max = null, $system = 'si', $retstring = '%01.2f%s') {
 
 		// Pick units
 
