@@ -8,6 +8,9 @@ class FTPException extends Exception {
  * FTP class
  * @author _ianbarker
  * 
+ * @todo create a multithreaded download 
+ * @todo create a multithreaded upload
+ * 
  */
 
 class ftp {
